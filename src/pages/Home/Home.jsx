@@ -13,6 +13,9 @@ const Home = () => {
     async function getTrendMovies() {
       try {
         const res = await getTrendingMovies();
+        if (res.length === 0) {
+          setError(true);
+        }
         setMovies(res);
       } catch {
         setError(true);

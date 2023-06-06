@@ -16,7 +16,7 @@ const Reviews = () => {
       try {
         const res = await getMovieReviews(movieId);
         console.log(res);
-        if (!res) {
+        if (res.length === 0) {
           setError(true);
         }
         setMovieReview(res);

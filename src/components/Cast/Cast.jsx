@@ -17,7 +17,7 @@ const Cast = () => {
       try {
         const res = await getMovieCredits(movieId);
 
-        if (!res) {
+        if (res.length === 0) {
           setError(true);
         }
         setMovieCast(res);
