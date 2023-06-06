@@ -6,7 +6,7 @@ const CastWrapper = styled.li`
   img {
     height: 300px;
     width: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
     border-radius: 4px;
   }
 
